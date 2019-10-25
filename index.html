@@ -15,7 +15,7 @@ function getQueryVariable(variable)
 myArray = ['Bart', 'Michael'];
 var arrStr = encodeURIComponent(JSON.stringify(myArray));
 obj = JSON.parse(decodeURIComponent(getQueryVariable("list")));
-document.getElementById("result").innerHTML = obj[Math.round(Math.random())]
+document.getElementById("result").innerHTML = obj[Math.round(Math.random())];
 </script>
 </head>
 <body>
