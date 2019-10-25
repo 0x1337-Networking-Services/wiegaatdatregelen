@@ -2,7 +2,7 @@
 <head>
 </head>
 <body>
-<h2 id="result">Who ?</h2>
+<h2 id="result">Who?</h2>
 <script type="text/javascript">
 function getQueryVariable(variable)
 {
@@ -16,6 +16,10 @@ function getQueryVariable(variable)
 }
 obj = JSON.parse(decodeURIComponent(getQueryVariable("list")));
 document.getElementById("result").innerHTML = obj[Math.round(Math.random())];
+if(document.getElementById("result").innerHTML == "undefined")
+{
+	document.getElementById("result").innerHTML = "Who ?";
+}
 </script>
 </body>
 </html>
