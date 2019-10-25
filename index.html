@@ -11,11 +11,10 @@ function getQueryVariable(variable)
        }
        return(false);
 }
-
-myArray = ['Bart', 'Michael'];
 var arrStr = encodeURIComponent(JSON.stringify(myArray));
 obj = JSON.parse(decodeURIComponent(getQueryVariable("list")));
-document.getElementById("result").innerHTML = obj[Math.round(Math.random())];
+var i = Math.round(Math.random());
+document.getElementById("result").innerHTML = JSON.stringify(obj[i]);
 </script>
 </head>
 <body>
