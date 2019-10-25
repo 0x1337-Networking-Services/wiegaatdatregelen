@@ -1,6 +1,9 @@
 <html>
 <head>
-<script>
+</head>
+<body>
+<h2 id="result">Who ?</h2>
+<script type="text/javascript">
 function getQueryVariable(variable)
 {
        var query = window.location.search.substring(1);
@@ -12,11 +15,7 @@ function getQueryVariable(variable)
        return(false);
 }
 obj = JSON.parse(decodeURIComponent(getQueryVariable("list")));
-var i = Math.round(Math.random());
-document.getElementById("result").innerHTML = ""+obj[i];
+document.getElementById("result").innerHTML = obj[Math.round(Math.random())];
 </script>
-</head>
-<body>
-<h2 id="result">Who ?</h2>
 </body>
 </html>
